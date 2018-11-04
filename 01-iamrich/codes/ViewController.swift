@@ -9,13 +9,59 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var LabelSoyRico: UILabel!
+    
+    @IBOutlet weak var imageDiamond: UIImageView!
+    
+    @IBOutlet var UIView: UIView!
+    
+    @IBOutlet weak var pulsameButtom: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print("hola q tal")
+        //print("hola q tal")
     }
 
-
+    @IBAction func ButtomPress(_ sender: UIButton) {
+        
+        let controller = UIAlertController(title: "SoyRico", message: """
+               Soy Rico,
+               Me lo Merezco,
+               Soy Bueno,
+               Tengo Salud y  Exito
+             """, preferredStyle: .actionSheet)
+        
+        let action = UIAlertAction(title: "SoyRico", style: .default) { _ in
+            self.UIView.backgroundColor = UIColor.blue
+           self.LabelSoyRico.text = "Por Fin Soy Rico"
+        }
+        controller.addAction(action)
+        
+        let action2 = UIAlertAction(title: "Reset", style: .destructive) { _ in
+             self.UIView.backgroundColor = UIColor.purple
+            self.LabelSoyRico.text = "SoyRico"
+            
+        }
+        
+        controller.addAction(action2)
+        
+        let action3 = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        controller.addAction(action3)
+  
+        self.show(controller, sender: nil)
+ 
+        
+        
+        /*self.LabelSoyRico.text = "Por Fin Soy Rico"
+        self.LabelSoyRico.textColor = UIColor.white
+        self.LabelSoyRico.font = UIFont.systemFont(ofSize: 50)
+        self.imageDiamond.image = UIImage(named: "incredible")
+       */
+    
 }
 
+}
