@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         let action2 = UIAlertAction(title: "Reset", style: .destructive) { _ in
              self.UIView.backgroundColor = UIColor.purple
             self.LabelSoyRico.text = "SoyRico"
-            
+            print("he pulsado el botom reset")
         }
         
         controller.addAction(action2)
