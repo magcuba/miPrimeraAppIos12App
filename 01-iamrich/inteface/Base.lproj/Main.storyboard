@@ -22,9 +22,9 @@
                                 <rect key="frame" x="135" y="361.66666666666669" width="105" height="89"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFC-Ma-U4g">
-                                <rect key="frame" x="134.66666666666666" y="493.66666666666674" width="106" height="48"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
-                                <state key="normal" title="Pulsame">
+                                <rect key="frame" x="51" y="493.66666666666674" width="273" height="49"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="27"/>
+                                <state key="normal" title="Pulsame y Seras Rico">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
