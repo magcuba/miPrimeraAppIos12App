@@ -48,6 +48,7 @@ class ViewController: UIViewController {
             self.LabelSoyRico.text = "SoyRico"
             self.imageDiamond.image = UIImage(named: "ruby")
             self.LabelSoyRico.textColor = UIColor.red
+            self.pulsameButtom.setTitle("Pulsame y Seras Rico", for: .normal)
             print("he pulsado el botom reset")
         }
         
@@ -67,7 +68,7 @@ class ViewController: UIViewController {
         self.LabelSoyRico.textColor = UIColor.white
         self.LabelSoyRico.font = UIFont.systemFont(ofSize: 50)
         //self.imageDiamond.image = UIImage(named: "incredible")
-    
+    self.pulsameButtom.setTitle("Felicidades Eres Rico", for: .normal)
 }
 
 }
